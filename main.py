@@ -130,3 +130,9 @@ def get_best_next(game_id: str):
             "best_next": best_next
         }
     }
+
+@app.post("/game/{game_id}/miss")
+def count_miss(game_id: str):
+    return {
+        "message": "ok"
+    }
